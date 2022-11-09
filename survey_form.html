@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+</head>
+
+<body>
+ <style>
+    body {
+        background-color: teal;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    h1
+    {
+        margin-top: 35px;
+    }
+    form {
+        background-color: beige;
+        max-width: 600px;
+        /* margin-left: 250px;
+        margin-right: 250px; */
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        
+    }
+    .formcontrol
+    {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .formcontrol label
+    {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .formcontrol input, 
+    .formcontrol select,
+    .formcontrol textarea
+    {
+        border: 1.5px solid black;
+        padding: 9px;
+        /* display: block; */
+        border-radius: 4px;
+        width: 95%;
+    }
+    .formcontrol input[type= "checkbox"],
+    .formcontrol input[type="radio"]
+    {
+        /* display: inline-block; */
+        width: auto;
+    }
+    button
+    {
+        width: 75%;
+        height: 35px;
+        /* display: block; */
+        background-color: teal;
+        border: 1.8px solid black;
+        border-radius: 3px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: inherit;
+    }
+ </style>
+    
+    <h1>
+        SURVEY FORM
+    </h1>
+    <form id="form">
+        <div class = " formcontrol">
+            <label for="name"> Name</label>
+            <input type="text" id="nm" placeholder="Enter Your Name">
+        </div>
+
+        <div class="formcontrol">
+            <label for="email"> Email ID</label>
+            <input type="email" id="eml" placeholder="Enter Your Email ID">
+        </div>
+        <div class="formcontrol">
+            <label for="DOB"> Date OF Birth</label>
+            <input type="date" id="dob" placeholder="Enter Your Date of Birth">
+        </div>
+        
+        <div class="formcontrol">
+            <label for="profession"> Profession </label>
+            <select name="Profession" id="Profession">
+                <option value="student">Student</option>
+                <option value="Intern"> Intern </option>
+                <option value="Professional"> Professional </option>
+                <option value="Other"> Other </option>
+            </select>
+            
+        </div>
+        
+        <div class="formcontrol">
+            <label>Please Select Your Favorite Web Language/Framework</label>
+            <label for="inp1">
+                <input type="checkbox">HTML
+            </label>
+            <label for="inp2">
+                <input type="checkbox"> CSS
+            </label>
+            <label for="inp3">
+                <input type="checkbox"> JavaScript
+            </label>
+            <label for="inp4">
+                <input type="checkbox"> MySQL
+            </label>
+            <label for="inp5">
+                <input type="checkbox"> Angular 
+            </label>
+            <label for="inp6">
+                <input type="checkbox"> BootStrap 
+            </label>
+            <label for="inp7">
+                <input type="checkbox"> Python 
+            </label>
+            <label for="inp8">
+                <input type="checkbox"> MongoDB 
+            </label>
+        </div>
+
+        <div class="formcontrol">
+            <label>Would You Recommend Learning360 Academy To Others?</label>
+            <label for="rec1">
+                <input type="radio" name="rec">YES </input> </label>
+            <label for="rec2">
+                <input type="radio" name="rec">NO </input> </label>
+            <label for="rec3">
+                <input type="radio" name="rec">MayBe </input></label>
+        </div>
+
+
+        <div class="formcontrol">
+            <label for="comm">Any Comments Or suggestions</label>
+            <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter Your Suggestion or Comments"></textarea>
+        </div>
+        <button onclick="sub()">SUBMIT</button>
+
+
+
+    </form>
+<script src="../javascript/survey_form.js"></script>
+</body>
+
+</html>
